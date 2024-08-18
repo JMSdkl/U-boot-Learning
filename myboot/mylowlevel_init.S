@@ -1,0 +1,7 @@
+.globl led2_on
+led2_on:
+	ldr	r11, =0xE0200284
+	ldr	r12, [r11]
+	bic	r12, r12, #(1<<1) @1左移一位（10）打开led2
+	str	r12, [r11]
+	mov	pc, lr
