@@ -1,0 +1,9 @@
+ssh-keygen -t rsa -C "email@example.com"	//获得密钥
+git init					//初始化本地仓库
+git config --global user.email "you@example.com" //添加工作者信息
+git config --global user.name "Your Name"
+git remote add origin https: xxx .git	//添加远程仓库
+git status				//查看当前文件状态
+git add .
+git commit -m "first commit"
+git push -u origin master 	//推送到master分支
